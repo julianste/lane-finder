@@ -15,7 +15,12 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./writeup/1.png "1"
+[image2]: ./writeup/2.png "2"
+[image3]: ./writeup/3.png "3"
+[image4]: ./writeup/4.png "4"
+[image5]: ./writeup/5.png "5"
+[image6]: ./writeup/6.png "6"
 
 ---
 
@@ -27,7 +32,7 @@ My pipeline consisted of 5 steps:
 1. dismiss everything that is not close to yellow and white as these are the colors of the lane markers
 2. apply region masking to a suitable window (and encode suitable polygon vertices with respect to the image size.)
 3. Now we should have reduced the image to the lane markers. Switch to grayscale.
-4. Apply smoothing and canny
+4. Apply smoothing and canny (with suitable parameters)
 5. Apply hough transform
 
 Suppose now we have a bunch of line parts for both lanes. In order to draw a single line on the left lane, we call function compute_lanes_from_lines which does the following:
@@ -36,12 +41,12 @@ Suppose now we have a bunch of line parts for both lanes. In order to draw a sin
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][1.png]
-![alt text][2.png]
-![alt text][3.png]
-![alt text][4.png]
-![alt text][5.png]
-![alt text][6.png]
+![alt text][image1]
+![alt text][image2]
+![alt text][image3]
+![alt text][image4]
+![alt text][image5]
+![alt text][image6]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
